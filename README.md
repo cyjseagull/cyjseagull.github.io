@@ -1,3 +1,3 @@
 # cyjseagull blog
 
-- url: cyjseagull.github.io
+- [url](cyjseagull.github.io)

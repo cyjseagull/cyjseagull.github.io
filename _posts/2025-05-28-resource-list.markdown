@@ -20,6 +20,14 @@ tags:
 
 - [rawtxdecode](https://rawtxdecode.in/)
 
+## 参考文档
+
+- [geth](https://geth.ethereum.org/docs)
+
+## 节点服务文档
+
+- [alchemy](https://www.alchemy.com/docs/reference/api-overview): 包括[Bundler API](https://www.alchemy.com/docs/reference/bundler-api-quickstart), [Trace API](https://www.alchemy.com/docs/reference/trace-api-quickstart), [Alchemy Transact](https://www.alchemy.com/docs/reference/transact-api-quickstart)等
+
 ## EVM相关
 
 **工具:**
@@ -30,7 +38,7 @@ tags:
 
 - [smlxl](https://blog.smlxl.io/)
 
-## 水龙头
+## Faucet
 
 - [Google Cloud](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
 
