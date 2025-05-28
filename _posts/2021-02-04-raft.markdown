@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Raft基础理论"
-subtitle:   " \"Hello Raft\""
+subtitle:   " \"Raft thesis\""
 date:       2020-02-04 15:00:00
 author:     "cyjseagull"
 header-img: "img/post-bg-2015.jpg"
@@ -13,7 +13,7 @@ tags:
 
 ## 1 分布式日志系统
 
-![](/img/distributed_log.png)
+![](/img/posts/raft/distributed_log.png)
 
 **分布式日志系统包括三个部分:**
 
@@ -37,7 +37,7 @@ tags:
 
 ### 3.1 日志(Log Entries)
 
-![](/img/raft/raft_log.png)
+![](/img/posts/raft/raft_log.png)
 
 上图是Raft中的基本日志结构，主要包括：
 
@@ -85,7 +85,7 @@ tags:
 
 **日志Commit限制: Leader仅可将当前Term的日志标记为commit状态**
 
-![](/img/raft_time_seq)
+![](/img/posts/raft/raft_time_seq)
 
 - **a**： s1在term2当选为Leader，产生日志(term2, log_index2)，并将其复制到s2
 - **b**: s1宕机，s5在term3当选为Leader，产生日志(term3, log_index2)，并在还没开始复制日志到其他节点时就宕机
@@ -105,7 +105,7 @@ tags:
 
 **Raft中可能出现的各种状态不一致的情况：**
 
-![](/img/raft_log_inconsistent.png)
+![](/img/posts/raft/raft_log_inconsistent.png)
 
 - `Follower`节点与`Leader`节点日志冲突时，`Leader`节点会强制覆盖`Follower`节点上与`Leader`节点不一致的日志
 
@@ -205,7 +205,7 @@ bool appendEntries(Message leader)
 
 ### 4.3 日志压缩
 
-![](/img/log_compress)
+![](/img/posts/raft/log_compress)
 
 上图示例：用节点快照替换`(term1, index1)`到`(term3, index5)`日志序列
 
@@ -217,7 +217,7 @@ bool appendEntries(Message leader)
 
 ### 4.4 集群成员变更
 
-![](/img/conf_change)
+![](/img/posts/raft/conf_change)
 
 **本质: 将集群成员配置作为特殊的日志从leader节点同步到其他节点**
 
@@ -239,7 +239,7 @@ bool appendEntries(Message leader)
 
 **两阶段切换集群成员配置用来解决这个问题：(共同一致， joint Consensus)**
 
-![](/img/atomic_conf_change)
+![](/img/posts/raft/atomic_conf_change)
 
 **阶段一:**
 

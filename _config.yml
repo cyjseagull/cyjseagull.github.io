@@ -1,6 +1,6 @@
 # Site settings
-title: cyjseagull Blog
-SEOTitle: 陈宇杰的博客 | cyjseagull Blog
+title: cyjseagull blog
+SEOTitle: cyjseagull的博客 | cyjseagull blog
 header-img: img/home-bg.jpg
 email: yujiechen_hust@163.com
 description: ""
@@ -64,8 +64,8 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "Make progress every single day."
+sidebar-avatar: /img/self-id.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 

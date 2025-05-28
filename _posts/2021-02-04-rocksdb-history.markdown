@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "为什么要设计和开发RocksDB"
-subtitle:   " \"Hello RocksDB\""
+subtitle:   " \"RocksDB History\""
 date:       2020-02-04 12:00:00
 author:     "Dhruba Borthakur"
 header-img: "img/post-bg-2015.jpg"
@@ -9,7 +9,6 @@ tags:
     - RocksDB
 ---
 
-> “Yeah It's on. ”
 
 - 翻译自[The History of RocksDB](http://rocksdb.blogspot.com/2013/11/the-history-of-rocksdb.html)
 
